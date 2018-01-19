@@ -13,7 +13,7 @@ Investigar a teoria que diz que as explosões solares são gatilhos de sismos no
 
 4. O programa (feito tanto em linguagem BASH como em Python) envia avisos (ao email e à pulseira Mi-Band ou relógio smart) além de dar a opção de abrir o mapa do local (via browser) onde estão havendo as últimas atividades sísmicas.
 
-5. Se estuda a possibilidade de usando os dados no formato KLM se possa desenvolver uma apresentação dinânima no Google Earth (app ou mesmo web google earth).
+5. Se estuda a possibilidade de usando os dados no formato KML se possa desenvolver uma apresentação dinânima no Google Earth (app ou mesmo web google earth), percorrendo locais de registro sísmicos.
 
 Desenvolverei todo esse projeto usando pelo menos 4 linguagens de programação: Python, BASH, AWK, e R. E se pretende rodar todo esse sistema tanto em Windows, como em Linux (do qual se origina), como em Mac, como também na WEB (podendo acessá-lo desde qualquer celular, tablet, etc) via navegador de internet.
 
