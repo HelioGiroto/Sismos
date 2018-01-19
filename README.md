@@ -23,3 +23,5 @@ Desenvolverei todo esse projeto usando pelo menos 4 linguagens de programação:
 Dedico esse projeto a meu amado povo mexicano.
 
 Autor Helio Giroto.
+
+[Sob licença de direitos autorais do MIT](https://raw.githubusercontent.com/HelioGiroto/Sismos/master/LICENSE)
