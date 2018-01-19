@@ -1,0 +1,114 @@
+TERREMOTOS - SISMOS
+
+# Documentação:
+https://earthquake.usgs.gov/fdsnws/event/1/
+
+
+# Formato TXT ; Mag.: 4+ ; Desde: Ontem - no Browser:
+firefox https://earthquake.usgs.gov/fdsnws/event/1/query?format=text&minmagnitude=4&starttime=YESTERDAY
+
+# Idem acima - formato: JSON:
+firefox https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&minmagnitude=4&starttime=YESTERDAY
+
+# Quantidade  de sismos (apenas substitui a palavra query por count): 
+	# Formato JSON :
+	https://earthquake.usgs.gov/fdsnws/event/1/count?format=geojson&minmagnitude=4&starttime=YESTERDAY
+
+	# Apenas o número:
+	https://earthquake.usgs.gov/fdsnws/event/1/count?minmagnitude=4&starttime=YESTERDAY
+
+	# Outro exemplo (qtde de sismos acima de 8 desde 2000):
+	https://earthquake.usgs.gov/fdsnws/event/1/count?minmagnitude=8&starttime=2000-01-01
+
+
+
+#########################################################
+
+# LINHA DE COMANDO (TERMINAL):
+
+
+# Obtem com CURL modo Silencio o URL (por ser método GET, requer opção -X e GET)...
+# Este URL te dá formato TXT; Mag 4+; A partir de ontem.
+# Se omitimos AWK e SED seguintes, o que sairia no navegador, sairá no Terminal
+# AWK para pegar apenas os campos DIA-HORA; MAG; LOCAL
+# SED para apagar a primeira linha (cabeçalho do TXT) e para separar data do horário do evento sísmico):
+
+curl -sX GET 'https://earthquake.usgs.gov/fdsnws/event/1/query?format=text&minmagnitude=4&starttime=YESTERDAY' | awk -F'|' '{print $2 " - " $11 " - " $13}' | sed '1d; s/T/ - /' 
+
+
+
+# Mas vamos supor que buscamos apenas os 2 últimos sismos (acima de 4):
+# O que muda é apenas o SED no fim da linha:
+
+curl -sX GET 'https://earthquake.usgs.gov/fdsnws/event/1/query?format=text&minmagnitude=4&starttime=YESTERDAY' | awk -F'|' '{print $2 " - " $11 " - " $13}' | sed -n 's/T/ - /; 2,3p' 
+
+# OBS: Os horários são hora UTC.
+
+
+
+# Porém existe um recurso de poder abrir no MAPA do browser o local do sismo.
+# Há um campo em cada registro de sismo que se chama CONTRIBUTOR-ID
+# Essa string define a URL do mapa do local do evento. Por ex.:
+# https://earthquake.usgs.gov/earthquakes/eventpage/us2000cl06#map
+# No caso acima, o contributorId é us2000cl06
+# Então podemos contruir uma URL com a variável correspondente que cada registro de sismo nos dá. Dessa forma:
+
+loc=$(curl -sX GET 'https://earthquake.usgs.gov/fdsnws/event/1/query?format=text&minmagnitude=4&starttime=yesterday' | sed -n '2p' | awk -F'|' '{print $9}')
+
+# Observe acima que no formato TXT que nos devolve, tal campo é o de número 9 ($9 no AWK). Somente obtivemos o 'contributorId' do último sismo (acima de 4);
+
+# Agora com o campo que nos interessa capturado, passaremos a construir a URL para abrir o mapa correspondente ao local do sismo:
+
+chromium-browser https://earthquake.usgs.gov/earthquakes/eventpage/$loc'#map'
+
+# Acima: o que está entre áspas '#map" é o formato padrão da url (ver linha 52).
+
+
+
+
+# PROPOSTA DE PROGRAMA 1:
+
+# Imprimir o número da opção antes da linha com os campos data, mag, local (basta usar o NR do awk) numa listga dos últimos sismos de mag X (X é definido pelo usuário)
+# o usuário será perguntado se quer ver o mapa da opção ....
+
+
+
+
+# PROPOSTA DE PROGRAMA 2:
+
+# Obtem datas das últimas explosões solares (acima de 5 K-index)
+# Procura obter nessa mesma data os sismos que ocorreram acima de 4-5
+
+# Se pode fazer dois plots (gráficos) com R:
+# Um de Linhas sendo o eixo Y a Magnitude dos sismos 
+# Outro de Barras mostrando  (no backgroud do mesmo plot) com as barras dos K-index acima de 5.
+
+
+
+# PROPOSTA DE PROGRAMA 3:
+
+# Obter o K-index da última medição do Monitor do Sol
+# Se é maior que 5...
+# Obterá informes dos próximos sismos acima de 3-4  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
