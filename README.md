@@ -9,7 +9,7 @@ Investigar a teoria que diz que as explosões solares são gatilhos de sismos no
 
 2. Obter os dados K-index do órgão do governo americano: noaa.gov e fazer envio de alertas;
 
-3. Cruzar os dados realizando um gráfico em linguagem R para mostrar de maneira observável se os momentos que ocorrem as explosões solares, quais e como são a atividade sismológica em todo mundo. Tentando encontrar algum padrão.
+3. Cruzar os dados realizando um gráfico em linguagem R para mostrar de maneira observável se os momentos que ocorrem as explosões solares, quais e como elas são a ponto de poder interferir na atividade sismológica em todo mundo. Tentando encontrar algum padrão.
 
 4. O programa (disponível tanto em linguagem BASH como em Python) envia avisos (ao email e/ou à pulseira Mi-Band ou relógio smart) além de dar a opção de abrir o mapa do local (via browser) onde estão havendo as últimas atividades sísmicas.
 
