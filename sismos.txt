@@ -45,11 +45,35 @@ curl -sX GET 'https://earthquake.usgs.gov/fdsnws/event/1/query?format=text&minma
 # OBS: Os horários são hora UTC.
 
 
+# Lista apenas locais em que aconteceram os últimos sismos. Sem o | sort -u lista sem a opção UNIQ (teste abaixo): 
+
+# ----------------------------------------------------------
+
+# Exemplo prático:
+# Conta quantos sismos houve em cada localidade das últimas 24+ horas:
+
+# (No RASPBERRY PI -> Para funcionar esse códio abaixo, é necessário digitar isso no Terminal antes:)
+
+IFS='                                                                                                                          '
+'
+
+curl -sX GET 'https://earthquake.usgs.gov/fdsnws/event/1/query?format=text&minmagnitude=4&starttime=YESTERDAY' | awk -F'|' '{print $13}' | cut -d',' -f2 | sed 's/^ //; 1d' | sort -u > sismos.txt
+
+for i in $(cat sismos.txt)
+do
+
+	ocorrencias=$(curl -sX GET 'https://earthquake.usgs.gov/fdsnws/event/1/query?format=text&minmagnitude=4&starttime=YESTERDAY' | awk -F'|' '{print $13}' | cut -d',' -f2 | sed 's/^ //; 1d' | grep -c $i)
+	echo Em $i houve $ocorrencias sismos
+
+done
+
+
+# ---------------------------------------------------------
 
 # Porém existe um recurso de poder abrir no MAPA do browser o local do sismo.
 # Há um campo em cada registro de sismo que se chama CONTRIBUTOR-ID
 # Essa string define a URL do mapa do local do evento. Por ex.:
-# https://earthquake.usgs.gov/earthquakes/eventpage/us2000cl06#map
+# https://earthquake.usgs.gov/earthquakes/eventpage/us2000cl06#map 	# (linha 76)
 # No caso acima, o contributorId é us2000cl06
 # Então podemos contruir uma URL com a variável correspondente que cada registro de sismo nos dá. Dessa forma:
 
@@ -61,7 +85,7 @@ loc=$(curl -sX GET 'https://earthquake.usgs.gov/fdsnws/event/1/query?format=text
 
 chromium-browser https://earthquake.usgs.gov/earthquakes/eventpage/$loc'#map'
 
-# Acima: o que está entre áspas '#map" é o formato padrão da url (ver linha 52).
+# Acima: o que está entre áspas '#map" é o formato padrão da url (ver linha 76).
 
 
 
@@ -90,25 +114,5 @@ chromium-browser https://earthquake.usgs.gov/earthquakes/eventpage/$loc'#map'
 # Obter o K-index da última medição do Monitor do Sol
 # Se é maior que 5...
 # Obterá informes dos próximos sismos acima de 3-4  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
