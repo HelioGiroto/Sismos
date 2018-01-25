@@ -53,3 +53,4 @@
 
 1950/07/09 - 04:40:08.000 - 6.8 - Acre, Brazil - [Mapa](https://earthquake.usgs.gov/earthquakes/eventpage/iscgem895577#map)
 
+![](sismos_brazil.jpg)
