@@ -19,4 +19,7 @@ do
 	echo				# para separar com uma linha em branco qdo muda o ano (década)
 done
 
+# Para executá-lo use:
+# curl -s https://raw.githubusercontent.com/HelioGiroto/Sismos/master/sismos_decadas.sh | bash
+
 # Autor: Helio Giroto
