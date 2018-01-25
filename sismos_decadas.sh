@@ -2,7 +2,7 @@
 
 # Este script dará o total de todos os sismos no mundo nas últimas 7 décadas (70 anos)
 
-# O resultado é o que você vê no arquivo abaixo:
+# O resultado é o que você vê neste link abaixo:
 # https://github.com/HelioGiroto/Sismos/blob/master/sismos_mundo_desde_1950.txt
 
 
