@@ -1,5 +1,5 @@
 # Terremotos no Brasil #
-## Desde 1950 - acima de Magnitude 6 ##
+## Desde 1950 - acima de Magnitude 5 ##
 
 2016/12/18 - 13:30:10 - 6.4 - 201km S of Tarauaca, Brazil - [Info](https://earthquake.usgs.gov/earthquakes/eventpage/us200082an#region-info)
 
