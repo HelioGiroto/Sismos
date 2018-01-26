@@ -26,6 +26,8 @@ firefox https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&minmagni
 
 # LINHA DE COMANDO (TERMINAL):
 
+# Formato atual do meu db:
+curl -sX GET 'https://earthquake.usgs.gov/fdsnws/event/1/query?format=text&minmagnitude=5&starttime=yesterday' | awk -F'|' '{print $2 "|" $11 "|" $9 "|" $13}' | sed '1d; s/T/|/'
 
 # Obtem com CURL modo Silencio o URL (por ser método GET, requer opção -X e GET)...
 # Este URL te dá formato TXT; Mag 4+; A partir de ontem.
