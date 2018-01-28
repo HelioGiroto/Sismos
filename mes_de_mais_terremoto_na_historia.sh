@@ -34,3 +34,5 @@ echo "TOTAL: " $(cat tot-meses.dat | xargs) >> tot-sismos.txt
 
 rm *.dat
 
+# Para saber o ano que mais teve terremoto:
+# cat tot-sismos.txt | sort -nr -t' ' -k 14
