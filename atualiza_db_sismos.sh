@@ -2,11 +2,13 @@
 
 
 hoje=$( date +%s )
-anterior=$( ls -l sismos5+ | date +%s )
+anterior=$( date -r sismos5+ +%s )
+# ERRO: anterior=$( ls -l sismos5+ | date +%s )
 
 
-periodo=$( echo $(( ( $hoje - $anterior ) / (60*60*24) +2 )) )		
+periodo=$( echo $(( ( $hoje - $anterior ) / (60*60*24) +2 )) )			# +2 no final para dar uma margem a mais.
 
+# periodo=40
 
 curl -sX GET 'https://earthquake.usgs.gov/fdsnws/event/1/query?format=text&minmagnitude=5&starttime=-'$periodo'days' | awk -F'|' '{print $2 "|" $11 "|" $9 "|" $13}' | sed '1d; s/T/|/' > ult_sismos
 
