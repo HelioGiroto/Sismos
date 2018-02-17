@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# ESSE ESCRIPT RODA SOMENTE EM MAC...
+
+# Avisará todos os terremotos acima de magnitude 2. 
+# Caso quiera alterar a magnitude, modificar linhas 13 e 15:
+
 hora_anterior=''
 
 while :
