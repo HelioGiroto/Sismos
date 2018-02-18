@@ -17,10 +17,10 @@ do
 	[[ $hora == $hora_anterior ]] || { afplay beep.mp3; hora_anterior=$hora; open -a Safari https://earthquake.usgs.gov/earthquakes/eventpage/${local}#executive; }
 
 	# No Raspberry Pi:
-	# [[ $hora == $hora_anterior ]] || { omxplayer beep.mp3; hora_anterior=$hora; open -a Safari https://earthquake.usgs.gov/earthquakes/eventpage/${local}#executive; }
+	# [[ $hora == $hora_anterior ]] || { omxplayer beep.mp3; hora_anterior=$hora; chromium-browser https://earthquake.usgs.gov/earthquakes/eventpage/${local}#executive; }
 	
 	# No Linux:
-	# [[ $hora == $hora_anterior ]] || { cvlc --play-and-exit beep.mp3 ; hora_anterior=$hora; open -a Safari https://earthquake.usgs.gov/earthquakes/eventpage/${local}#executive; }
+	# [[ $hora == $hora_anterior ]] || { cvlc --play-and-exit beep.mp3 ; hora_anterior=$hora; chromium-browser https://earthquake.usgs.gov/earthquakes/eventpage/${local}#executive; }
 
 
 
