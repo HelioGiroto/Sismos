@@ -14,7 +14,7 @@ do
 
 	mag=$(curl -sX GET ${site} | sed '1d; s/T/|/' | head -n1 | cut -d"|" -f12) 
 		
-	[[ $hora == $hora_anterior ]] || { omxplayer beep.mp3 &> /dev/null; hora_anterior=$hora; chromium-browser https://earthquake.usgs.gov/earthquakes/eventpage/${local}#executive &> /dev/null; }
+	[[ $hora == $hora_anterior ]] || { omxplayer beep.mp3 &> /dev/null; hora_anterior=$hora; chromium-browser https://earthquake.usgs.gov/earthquakes/eventpage/${local}#executive 2> /dev/null & }
 	# Outros sistemas ver no rodapé...
 
 	echo "Último sismo: ${hora} UTC - ${mag}" #>> registros.txt
@@ -25,13 +25,13 @@ done
 	# OUTROS SISTEMAS:
 	
 	# No Mac:	
-	# [[ $hora == $hora_anterior ]] || { afplay beep.mp3; hora_anterior=$hora; open -a Safari https://earthquake.usgs.gov/earthquakes/eventpage/${local}#executive; }
+	# [[ $hora == $hora_anterior ]] || { afplay beep.mp3 &> /dev/null; hora_anterior=$hora; open -a Safari https://earthquake.usgs.gov/earthquakes/eventpage/${local}#executive 2> /dev/null &  }
 
 	# No Raspberry Pi:
-	# [[ $hora == $hora_anterior ]] || { omxplayer beep.mp3; hora_anterior=$hora; chromium-browser https://earthquake.usgs.gov/earthquakes/eventpage/${local}#executive; }
+	# [[ $hora == $hora_anterior ]] || { omxplayer beep.mp3 &> /dev/null; hora_anterior=$hora; chromium-browser https://earthquake.usgs.gov/earthquakes/eventpage/${local}#executive 2> /dev/null & }
 	
 	# No Linux:
-	# [[ $hora == $hora_anterior ]] || { cvlc --play-and-exit beep.mp3 ; hora_anterior=$hora; chromium-browser https://earthquake.usgs.gov/earthquakes/eventpage/${local}#executive; }
+	# [[ $hora == $hora_anterior ]] || { cvlc --play-and-exit beep.mp3 &> /dev/null; hora_anterior=$hora; firefox https://earthquake.usgs.gov/earthquakes/eventpage/${local}#executive 2> /dev/null & }
 
 
 # Autor: Hélio Giroto
