@@ -1,0 +1,115 @@
+AS PRIMEIRAS LINHAS (ESCRITO: pi@raspberrypi:~ $ ...) SÃO LINHAS DE CÓDIGO EM SHELL SCRIPT (Logo após estão os dados da raspagem do site de NOAA.ORG)
+
+pi@raspberrypi:~ $ echo "EXPLOSOES SOLARES EM SETEMBRO/2017 acima de e-06"; for i in $(echo {01..23}); do echo -n "$i - "; curl -s ftp://ftp.swpc.noaa.gov/pub/lists/xray/201709${i}_Gp_xr_1m.txt | grep 'e-0[6]$' | wc -l; done
+
+EXPLOSOES SOLARES EM SETEMBRO/2017 (acima de e-06)
+01 - 27
+02 - 107
+03 - 24
+04 - 1029
+05 - 1075
+06 - 833
+07 - 1272   * Dia do 1º Terremoto de 8.2 - Oaxaca
+08 - 797
+09 - 804
+10 - 562
+11 - 342
+12 - 18
+13 - 0
+14 - 0
+15 - 0
+16 - 0
+17 - 0
+18 - 0
+19 - 0     * Dia do 2º terremoto de 7.1 - Mais trágico - DF
+20 - 0
+21 - 0
+22 - 0
+23 - 0
+
+pi@raspberrypi:~ $ echo; echo "EXPLOSOES SOLARES EM SETEMBRO/2017 acima de e-05"; for i in $(echo {01..23}); do echo -n "$i - "; curl -s ftp://ftp.swpc.noaa.gov/pub/lists/xray/201709${i}_Gp_xr_1m.txt | grep 'e-0[5]$' | wc -l; done
+
+EXPLOSOES SOLARES EM SETEMBRO/2017 (acima de e-05)
+01 - 0
+02 - 0
+03 - 0
+04 - 222
+05 - 85
+06 - 332
+07 - 89     * Dia do 1º Terremoto de 8.2 - Oaxaca
+08 - 132
+09 - 105
+10 - 279
+11 - 0
+12 - 0
+13 - 0
+14 - 0
+15 - 0
+16 - 0
+17 - 0
+18 - 0
+19 - 0    * Dia do 2º terremoto de 7.1 - Mais trágico - DF
+20 - 0
+21 - 0
+22 - 0
+23 - 0
+
+pi@raspberrypi:~ $ echo; echo "EXPLOSOES SOLARES EM SETEMBRO/2017 acima de e-04"; for i in $(echo {01..23}); do echo -n "$i - "; curl -s ftp://ftp.swpc.noaa.gov/pub/lists/xray/201709${i}_Gp_xr_1m.txt | grep 'e-0[4]$' | wc -l; done
+
+EXPLOSOES SOLARES EM SETEMBRO/2017 (acima de e-04)
+01 - 0
+02 - 0
+03 - 0
+04 - 0
+05 - 0
+06 - 102
+07 - 7      * Dia do 1º Terremoto de 8.2 - Oaxaca
+08 - 0
+09 - 0
+10 - 92
+11 - 0
+12 - 0
+13 - 0
+14 - 0
+15 - 0
+16 - 0
+17 - 0
+18 - 0
+19 - 0    * Dia do 2º terremoto de 7.1 - Mais trágico - DF
+20 - 0
+21 - 0
+22 - 0
+23 - 0
+
+pi@raspberrypi:~ $ 
+pi@raspberrypi:~ $ echo; echo "EXPLOSOES SOLARES EM SETEMBRO/2017 acima de e-03"; for i in $(echo {01..23}); do echo -n "$i - "; curl -s ftp://ftp.swpc.noaa.gov/pub/lists/xray/201709${i}_Gp_xr_1m.txt | grep 'e-0[3]$' | wc -l; done
+
+EXPLOSOES SOLARES EM SETEMBRO/2017 (acima de e-03)  (Isso seria QUASE "o APOCALIPSE")
+01 - 0
+02 - 0
+03 - 0
+04 - 0
+05 - 0
+06 - 0
+07 - 0
+08 - 0
+09 - 0
+10 - 0
+11 - 0
+12 - 0
+13 - 0
+14 - 0
+15 - 0
+16 - 0
+17 - 0
+18 - 0
+19 - 0
+20 - 0
+21 - 0
+22 - 0
+23 - 0
+
+# Medidas e-06, etc: 1 dividido por 10 elevado a -6 (1/1.000.000) 
+
+# Helio Giroto
+Noticia sobre terremoto - http://www.eitb.eus/es/noticias/internacional/detalle/5105159/terremoto-mexico-19-septiembre-2017-noticias-sismo-dia-26/
