@@ -22,7 +22,7 @@ Desenvolverei todo esse projeto usando pelo menos 4 linguagens de programação:
 
 Dedico esse projeto a meu amado povo mexicano.
 
-<img src="ftp://ftp.swpc.noaa.gov/pub/plots/xray/20170906_xray.gif" height="240" width="320">
+<img src="ftp.swpc.noaa.gov/pub/plots/xray/20170906_xray.gif" height="240" width="320">
 
 <img src="ftp://ftp.swpc.noaa.gov/pub/plots/kp/20170908_kp.gif" height="240" width="320">
 
