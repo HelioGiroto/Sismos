@@ -111,5 +111,7 @@ EXPLOSOES SOLARES EM SETEMBRO/2017 (acima de e-03)  (Isso seria QUASE "o APOCALI
 
 # Medidas e-06, etc: 1 dividido por 10 elevado a -6 (1/1.000.000) 
 
+# A EXPLOSÃO MAIS FORTE - Ver em ftp://ftp.swpc.noaa.gov/pub/plots/xray/20170906_xray.gif
+
 # Helio Giroto
 Noticia sobre terremoto - http://www.eitb.eus/es/noticias/internacional/detalle/5105159/terremoto-mexico-19-septiembre-2017-noticias-sismo-dia-26/
