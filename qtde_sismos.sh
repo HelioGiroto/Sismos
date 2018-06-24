@@ -1,4 +1,5 @@
 #!/bin/bash
+# Script que gera um arquivo e gráfico em R
 
 for num in $(seq 5 9)
 do
