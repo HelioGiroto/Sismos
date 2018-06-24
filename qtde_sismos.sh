@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 for num in $(seq 5 9)
 do
 	mag[$num]=$(curl -s -X GET $(echo 'https://earthquake.usgs.gov/fdsnws/event/1/count?minmagnitude='$num'&starttime=2000-01-01')) 
@@ -28,9 +27,5 @@ display *.png &
 # display graf.png
 # ou pode ser xdg-open para abrir qualquer arquivo pois o xdg-open simula os dois cliques
 
-
-
-
 # Pausa nao funcionou
 # echo "Sys.sleep(20)" >> graf.R
-
