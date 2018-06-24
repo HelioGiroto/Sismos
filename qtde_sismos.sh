@@ -15,7 +15,7 @@ echo "png()" > graf.R
 echo "plot(c("$dados"), type='l')" >> graf.R
 echo "dev.off()" >> graf.R
 
-# 	Tente tb type= l,p,b,o,c,h,s,S
+# Tente tb type= l,p,b,o,c,h,s,S
 
 # Esses 2 abaixo nao funcionaram: 
 # R < graf.R --no-save
