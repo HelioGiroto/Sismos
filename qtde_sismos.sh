@@ -1,11 +1,11 @@
 #!/bin/bash
-# Este script cria arquivo e gráfico em R (requer Linguagem R instalada):
+# Este script cria arquivo e gráfico em R (requer Linguagem R instalada).
+# Criará um gráfico de barras com a quantidade de Sismos no mundo desde 2000 - dividido em magnitudes...
 
 for num in $(seq 5 9)
 do
 	mag[$num]=$(curl -s -X GET $(echo 'https://earthquake.usgs.gov/fdsnws/event/1/count?minmagnitude='$num'&starttime=2000-01-01')) 
 	echo "Magnitude" $num " - " ${mag[$num]} "vezes."
-
 done
 
 dados=$(echo ${mag[*]} | sed 's/ /,/g')		# Cria array formatado para R
