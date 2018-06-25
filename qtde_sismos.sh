@@ -1,6 +1,5 @@
 #!/bin/bash
-
-# Este script cria arquivo e gráfico em R
+# Este script cria arquivo e gráfico em R (requer Linguagem R instalada):
 
 for num in $(seq 5 9)
 do
@@ -9,34 +8,25 @@ do
 
 done
 
-dados=$(echo ${mag[*]} | sed 's/ /,/g')
-echo $dados 
+dados=$(echo ${mag[*]} | sed 's/ /,/g')		# Cria array formatado para R
+echo;echo $dados 
 
-# Antigo:
+# Antiga versão:
 # Abaixo deveria gerar um grafico jpg ou png e depois abrir o jpg/png
 # echo "png()" > graf.R
 # echo "plot(c("$dados"), type='l')" >> graf.R
 # echo "dev.off()" >> graf.R
 # Tente tb type= l,p,b,o,c,h,s,S
 
+# Daqui em diante, cria um arquivo R
 echo "png()" > graf.R
 echo "valores <- c(${dados})" >> graf.R
 echo "X <- c('>5','>6','>7','>8','>9')" >> graf.R
-echo "barplot(valores, names.arg = X, xlab = 'Magnitudes', ylab = 'Nro. Sismos', main = 'Sismos no Mundo (desde 2000)', col='red')" >> graf.R
+echo "barplot(valores, names.arg = X, xlab = 'Magnitudes', ylab = 'Nro. de Sismos', main = 'Sismos no Mundo (desde 2000)', col='red')" >> graf.R
 echo "dev.off()" >> graf.R
 
+# Abre (cria) gráfico com os dados coletados:
 R -f graf.R &> /dev/null
 display Rplot*.png &
-
-# Esses 2 abaixo nao funcionaram: 
-# R < graf.R --no-save
-# Rscript graf.R
-
-# Para abrir uma imagem:
-# display graf.png
-# ou pode ser xdg-open para abrir qualquer arquivo pois o xdg-open simula os dois cliques
-
-# Pausa nao funcionou
-# echo "Sys.sleep(20)" >> graf.R
 
 # Autor: Helio Giroto
