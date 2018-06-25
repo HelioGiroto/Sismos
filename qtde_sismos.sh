@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Este script cria arquivo e gráfico em R
+
 for num in $(seq 5 9)
 do
 	mag[$num]=$(curl -s -X GET $(echo 'https://earthquake.usgs.gov/fdsnws/event/1/count?minmagnitude='$num'&starttime=2000-01-01')) 
@@ -36,3 +38,5 @@ display Rplot*.png &
 
 # Pausa nao funcionou
 # echo "Sys.sleep(20)" >> graf.R
+
+# Autor: Helio Giroto
