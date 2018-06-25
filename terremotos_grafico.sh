@@ -22,7 +22,7 @@ echo;echo $dados
 # Daqui em diante, cria um arquivo R:
 echo "png()" > graf.R
 echo "valores <- c(${dados})" >> graf.R
-echo "X <- c('>5','>6','>7','>8','>9')" >> graf.R
+echo "X <- c('5.x','6.x','7.x','8.x','9.x')" >> graf.R
 echo "barplot(valores, names.arg = X, xlab = 'Magnitudes', ylab = 'Nro. de Sismos', main = 'Sismos no Mundo (desde 2000)', col='red')" >> graf.R
 echo "dev.off()" >> graf.R
 
