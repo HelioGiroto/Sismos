@@ -11,6 +11,7 @@
    
    bash sismos-por-mag.sh
    
+   sort -nr -t' ' -k 14 tot-sismos.txt          # Ano com mais terremotos >5 da historia 
    
    
    
