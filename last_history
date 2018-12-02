@@ -3,8 +3,9 @@
    grep 'Alaska' sismos5+ | grep -E '\|8\|' >> Alaska.txt
    grep 'Alaska' sismos5+ | grep -E '\|8\.' >> Alaska.txt
    
-   https://earthquake.usgs.gov/fdsnws/event/1/query?format=text&minmagnitude=5&&starttime=-10years
-   https://github.com/HelioGiroto/Sismos/blob/master/tot-sismos_5%2B.txt
+   https://earthquake.usgs.gov/fdsnws/event/1/query?format=text&minmagnitude=5&&starttime=-10years    # ult >5 -10anos
+   https://github.com/HelioGiroto/Sismos/blob/master/tot-sismos_5%2B.txt                              # tot sismos por mes
+   https://github.com/HelioGiroto/Sismos/blob/master/sismos-por-mag.csv                               # tot >5,6,7,8...
    
    bash sismos-por-mag.sh
    
