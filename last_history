@@ -4,6 +4,7 @@
    grep 'Alaska' sismos5+ | grep -E '\|8\.' >> Alaska.txt
    
    https://earthquake.usgs.gov/fdsnws/event/1/query?format=text&minmagnitude=5&&starttime=-10years
+   https://github.com/HelioGiroto/Sismos/blob/master/tot-sismos_5%2B.txt
    
    bash sismos-por-mag.sh
    
