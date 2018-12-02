@@ -1,0 +1,43 @@
+1953-01-05|07:48:28.000|7|iscgem891410|Near Islands, Aleutian Islands, Alaska
+1957-03-09|14:22:33.000|8.6|official19570309142233_30|Andreanof Islands, Aleutian Islands, Alaska
+1957-03-11|09:58:52.000|7.1|iscgem886098|Fox Islands, Aleutian Islands, Alaska
+1957-03-11|14:55:24.000|7|iscgem886103|Andreanof Islands, Aleutian Islands, Alaska
+1957-03-12|11:45:00.000|7.1|iscgem886120|Andreanof Islands, Aleutian Islands, Alaska
+1957-03-14|14:47:50.000|7.1|iscgem886155|Andreanof Islands, Aleutian Islands, Alaska
+1957-03-16|02:34:18.000|7.2|iscgem886172|Andreanof Islands, Aleutian Islands, Alaska
+1957-03-22|14:21:15.000|7.1|iscgem886230|Fox Islands, Aleutian Islands, Alaska
+1957-04-10|11:30:03.000|7|iscgem886362|south of Alaska
+1958-04-07|15:30:45.000|7.1|iscgem884131|northern Alaska
+1958-07-10|06:15:58.000|7.8|iscgem884702|Southeastern Alaska
+1965-02-04|05:01:22.000|8.7|official19650204050122_30|Rat Islands, Aleutian Islands, Alaska
+1965-02-04|08:40:44.000|7.3|iscgem859264|Rat Islands, Aleutian Islands, Alaska
+1965-03-30|02:27:06.000|7.6|iscgem858982|Rat Islands, Aleutian Islands, Alaska
+1965-07-02|20:58:40.000|7.8|iscgem855112|Fox Islands, Aleutian Islands, Alaska
+1965-09-04|14:32:51.000|7|iscgem853605|Kodiak Island region, Alaska
+1970-02-28|10:52:33.000|7.1|iscgem799531|Andreanof Islands, Aleutian Islands, Alaska
+1971-02-07|02:29:30.000|7|iscgem786954|Andreanof Islands, Aleutian Islands, Alaska
+1971-05-02|06:08:27.000|7|iscgem784013|Andreanof Islands, Aleutian Islands, Alaska
+1972-07-30|21:45:17.000|7.6|iscgem772060|Southeastern Alaska
+1975-02-02|08:43:39.100|7.6|usp00009ry|Near Islands, Aleutian Islands, Alaska
+1979-02-28|21:27:06.100|7.1|usp0000z2a|Southern Alaska
+1981-01-30|08:52:44.100|7|usp0001byq|Rat Islands, Aleutian Islands, Alaska
+1986-05-07|22:47:10.870|8|usp0002tmu|Andreanof Islands, Aleutian Islands, Alaska
+1987-11-30|19:23:19.590|7.9|usp0003aq8|Gulf of Alaska
+1988-03-06|22:35:38.140|7.8|usp0003dnb|Gulf of Alaska
+1989-09-04|13:14:58.250|7.1|usp0003z7h|south of Alaska
+1991-05-30|13:17:41.970|7|usp0004s9h|Alaska Peninsula
+1996-06-10|04:03:35.480|7.9|usp0007jcu|Andreanof Islands, Aleutian Islands, Alaska
+1996-06-10|15:24:56.000|7.3|usp0007jfz|Andreanof Islands, Aleutian Islands, Alaska
+1999-12-06|23:12:33.920|7|usp0009jj1|Kodiak Island region, Alaska
+2001-01-10|16:02:44.230|7|usp000a7f2|Kodiak Island region, Alaska
+2002-11-03|22:12:41.000|7.9|usp000bg0m|Central Alaska
+2003-03-17|16:36:17.310|7.1|usp000bsvs|Rat Islands, Aleutian Islands, Alaska
+2003-11-17|06:43:06.800|7.8|usp000cd1n|Rat Islands, Aleutian Islands, Alaska
+2007-12-19|09:30:27.930|7.2|usp000fuse|Andreanof Islands, Aleutian Islands, Alaska
+2011-06-24|03:09:39.470|7.3|usp000j3mq|Fox Islands, Aleutian Islands, Alaska
+2013-01-05|08:58:19.330|7.5|usp000jxum|Southeastern Alaska
+2013-08-30|16:25:02.300|7|usb000jdt7|101km SW of Atka, Alaska
+2014-06-23|20:53:09.700|7.9|usc000rki5|19km SE of Little Sitkin Island, Alaska
+2016-01-24|10:30:30.230|7.1|us10004gqp|86km E of Old Iliamna, Alaska
+2018-01-23|09:31:42.940|7.9|us2000cmy3|280km SE of Kodiak, Alaska
+2018-11-30|17:29:29.206|7|ak20419010|12km N of Anchorage, Alaska
