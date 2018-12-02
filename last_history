@@ -6,6 +6,11 @@
    https://earthquake.usgs.gov/fdsnws/event/1/query?format=text&minmagnitude=5&&starttime=-10years    # ult >5 -10anos
    https://github.com/HelioGiroto/Sismos/blob/master/tot-sismos_5%2B.txt                              # tot sismos por mes
    https://github.com/HelioGiroto/Sismos/blob/master/sismos-por-mag.csv                               # tot >5,6,7,8...
+   https://github.com/HelioGiroto/23-Set/blob/master/Lua.csv                                       # Lua em Virgo ???
+   
    
    bash sismos-por-mag.sh
+   
+   
+   
    
