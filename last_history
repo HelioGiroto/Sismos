@@ -2,3 +2,5 @@
    grep 'Alaska' sismos5+ | grep -E '\|7\.' >> Alaska.txt
    grep 'Alaska' sismos5+ | grep -E '\|8\|' >> Alaska.txt
    grep 'Alaska' sismos5+ | grep -E '\|8\.' >> Alaska.txt
+   
+   https://earthquake.usgs.gov/fdsnws/event/1/query?format=text&minmagnitude=5&&starttime=-10years
