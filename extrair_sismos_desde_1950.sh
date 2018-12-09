@@ -28,4 +28,4 @@ done
 sort -ru sismos.dat > sismos_5+_desde_1950.txt		# Ordena e aplica UNIQ (-u)
 rm sismos.dat						# Deleta o arquivo bruto.
 
-# Autor: Helio Giroto
+# Autor: Helio Giroto 
