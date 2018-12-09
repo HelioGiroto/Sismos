@@ -16,3 +16,4 @@
    # SE FOR USAR O CURL, NÃO ESQUECER DE COLOCAR A URL ENTRE ÁSPAS (Por causa do & no url):
    curl -s "https://earthquake.usgs.gov/fdsnws/event/1/query?format=text&minmagnitude=5&starttime=-10years" > arquivo.txt
    
+ 
